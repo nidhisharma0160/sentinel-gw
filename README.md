@@ -279,32 +279,6 @@ curl http://localhost:8000/circuit-breaker
 # Wait 30 seconds — state transitions to HALF-OPEN automatically on next request
 ```
 
----
-
-## Resume Bullet Points
-
-```
-Sentinel-GW: High-Throughput AI Observability Gateway
-Python · FastAPI · Prometheus · Redis · PostgreSQL · Docker
-
-• Architected a high-performance AI proxy using FastAPI to intercept and audit
-  LLM API calls, ensuring 100% logging traceability into PostgreSQL SpendLogs
-  via UUID trace IDs that propagate across console logs, DB rows, and metrics.
-
-• Engineered custom Prometheus instrumentation with configurable latency
-  histogram buckets loaded from environment variables at startup, enabling
-  granular performance monitoring without code changes across environments.
-
-• Developed a robust guardrail engine with structured error middleware that
-  eliminates silent failures — all policy enforcement exceptions are caught
-  and surfaced as typed 422 API responses with full trace context.
-
-• Integrated a Redis-backed circuit breaker implementing the CLOSED/OPEN/
-  HALF-OPEN state machine, maintaining system stability during upstream
-  provider outages and persisting state across container restarts.
-```
-
----
 
 ## License
 
